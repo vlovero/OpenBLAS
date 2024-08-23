@@ -3,6 +3,11 @@
 ## Description: Ported from portion of OpenBLAS/Makefile.system
 ##              Sets Fortran related variables.
 
+## Modified: Start 
+set(CCOMMON_OPT "${CCOMMON_OPT} -march=native")
+set(FCOMMON_OPT "${FCOMMON_OPT} -march=native")
+## Modified: Stop
+
 if (${F_COMPILER} STREQUAL "FLANG" AND NOT CMAKE_Fortran_COMPILER_ID STREQUAL "LLVMFlang")
   # This is for classic Flang. LLVM Flang is handled with gfortran below.
   set(CCOMMON_OPT "${CCOMMON_OPT} -DF_INTERFACE_FLANG")
