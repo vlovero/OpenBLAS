@@ -24,13 +24,13 @@ option(BUILD_LAPACK_DEPRECATED "When building LAPACK, include also some older, d
 
 set(LAPACK_STRLEN "" CACHE STRING "When building LAPACK, use this type (e.g. \"int\") for character lengths (defaults to size_t)")
 
-option(BUILD_TESTING "Build LAPACK testsuite when building LAPACK" ON)
+option(BUILD_TESTING "Build LAPACK testsuite when building LAPACK" OFF)  # changed
 
 option(BUILD_BENCHMARKS "Build the collection of BLAS/LAPACK benchmarks" OFF)
 
 option(C_LAPACK "Build LAPACK from C sources instead of the original Fortran" OFF)
 
-option(BUILD_WITHOUT_CBLAS "Do not build the C interface (CBLAS) to the BLAS functions" OFF)
+option(BUILD_WITHOUT_CBLAS "Do not build the C interface (CBLAS) to the BLAS functions" ON)  # changed
 
 option(DYNAMIC_ARCH "Include support for multiple CPU targets, with automatic selection at runtime (x86/x86_64, aarch64, ppc or RISCV64-RVV1.0 only)" OFF)
 
