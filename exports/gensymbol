@@ -872,12 +872,16 @@ lapackobjs2c="$lapackobjs2c
     claqp2rk
     claqp3rk
     ctrsyl3
+    claqz0
     "
-#    claqz0
 #    claqz1
 #    claqz2
 #    claqz3
 #    clatrs3
+
+lapackobjs2s="$lapackobjs2s
+    slaqz0
+    "
 
 lapackobjs2d="$lapackobjs2d
     dgelst
@@ -887,8 +891,8 @@ lapackobjs2d="$lapackobjs2d
     dlarmm
     dlatrs3
     dtrsyl3
+    dlaqz0
     "
-#    dlaqz0
 #    dlaqz1
 #    dlaqz2
 #    dlaqz3
@@ -902,8 +906,8 @@ lapackobjs2z="$lapackobjs2z
     zlatrs3
     zrscl
     ztrsyl3
+    zlaqz0
     "
-#    zlaqz0
 #    zlaqz1
 #    zlaqz2
 #    zlaqz3
